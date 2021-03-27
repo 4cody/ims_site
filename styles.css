@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.primary_section {
+  padding: 0.5em;
+  border: 2px solid blue;
+}
+
+header .hero_image img {
+  margin: auto;
+  border: 1px solid black;
+  display: block;
+}
+
+.services {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  width: 30%;
+  min-width: 400px;
+  max-width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.service-img img {
+  width: 100%;
+  height: 65%;
+}
+
+.service-copy {
+  background: blue;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 0;
+}
+
+.service-copy h2 {
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+}
+
+.service-copy p {
+  display: none;
+}
+
+.service-copy:hover {
+  height: 100%;
+}
