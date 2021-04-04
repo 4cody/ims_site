@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body,
@@ -11,54 +12,173 @@ html {
 
 .primary_section {
   padding: 0.5em;
-  border: 2px solid blue;
+  border: 2px solid black;
+}
+
+header {
+  position: relative;
+}
+
+header .hero_image {
 }
 
 header .hero_image img {
-  margin: auto;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
   border: 1px solid black;
   display: block;
+  filter: blur(2px);
+  opacity: 0.8;
+}
+
+.hero_copy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  place-content: center;
+}
+
+.hero_copy h1 {
+  width: 100vw;
+  text-align: center;
+  border-radius: 5px;
+  background: linear-gradient(
+    rgba(221, 221, 221, 0.5),
+    rgba(221, 221, 221, 0.1)
+  );
+  padding-bottom: 20px;
+}
+
+.hero_sub_heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero_sub_heading span {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(230, 230, 230);
+  padding: 5px;
+}
+
+.greeting {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(60, 60, 60);
+  padding-bottom: 20px;
+}
+
+.greeting p {
+  font-size: 1.3rem;
+}
+
+.greeting a:hover,
+.greeting a:active {
 }
 
 .services {
-  border: 1px solid black;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
 .service {
-  width: 30%;
-  min-width: 400px;
-  max-width: 600px;
-  height: 600px;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin-bottom: 2em;
+  height: 500px;
   border: 1px solid black;
+  background-color: grey;
   position: relative;
 }
 
 .service-img img {
   width: 100%;
-  height: 65%;
+  height: 100px;
+  object-fit: cover;
 }
 
 .service-copy {
-  background: blue;
-  position: absolute;
-  width: 100%;
-  height: 30%;
-  left: 0;
-  bottom: 0;
+  text-align: center;
 }
 
 .service-copy h2 {
   font-size: 2em;
   text-align: center;
-  padding: 1em;
+  padding: 0.4em;
 }
 
 .service-copy p {
-  display: none;
+  padding-top: 1.2em;
 }
 
 .service-copy:hover {
   height: 100%;
+}
+
+.service-list {
+  list-style-type: none;
+  text-align: left;
+}
+
+.service-list li {
+  font-weight: 500;
+  color: white;
+}
+
+footer {
+  padding: 2em 1em;
+  background-color: rgb(53, 53, 53);
+}
+
+.footer_copy {
+  color: white;
+}
+
+.footer_copy span {
+  font-weight: 500;
+  display: block;
+  color: black;
+}
+
+.footer_cta {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.footer_cta p {
+  color: white;
+  padding-bottom: 5px;
+}
+
+.footer_cta a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(151, 151, 151);
+  padding-top: 1em;
+}
+
+/* Medium screens */
+@media all and (min-width: 800px) {
+}
+
+/* Small screens */
+@media all and (min-width: 1400px) {
 }
